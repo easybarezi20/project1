@@ -23,6 +23,10 @@ int main()
 
 	listOne.insertBack(30);
 
+	listOne.insertAtTarget(15, 10);
+
+	listOne.insertAtTarget(35, 30);
+
 	listOne.print();
 
 	listOne.clearList();

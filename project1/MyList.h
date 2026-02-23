@@ -11,6 +11,7 @@ public:
 	void print();
 	void clearList();
 	void insertBack(int);
+	void insertAtTarget(int, int);
 	~MyList();
 private:
 	Node* first;

@@ -50,6 +50,25 @@ void MyList::clearList()
 	std::cout << "list cleared!\n";
 }
 
+void MyList::insertAtTarget(int newData, int target)
+{
+	Node* current = first;
+	while (current->getData() != target) current = current->getNext();
+
+	if (current == nullptr)
+	{
+		Node* newNode = new Node(newData, nullptr);
+		current->setNext(newNode);
+		count++;
+	}
+	else
+	{
+		Node* newNode = new Node(newData, current->getNext());
+		current->setNext(newNode);
+		count++;
+	}
+}
+
 MyList::~MyList()
 {
 	clearList();
