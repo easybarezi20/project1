@@ -19,6 +19,7 @@ int main()
 	listOne.insertFront(20);
 	listOne.insertFront(10);
 	listOne.insertFront(5);
+	listOne.insertFront(0);
 
 	listOne.insertBack(30);
 
